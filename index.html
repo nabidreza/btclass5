@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font links -->
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>bootstrap</title>
+  </head>
+  <body>
+
+  	<!-- grid and flex  -->
+  		<h1 class="display-3 text-capitalize text-center">grid & flex</h1>
+  	<section>
+  		<div class="container">
+  			<div class="row justify-content-center">
+  				<div class="col-lg-6 col-md col-6"><div class="box"></div></div>
+  			</div>
+  		</div>
+  	</section>
+  	<section>
+  		<div class="container">
+  			<div class="row row-cols-2 justify-content-center">
+  				<div class="col-lg col-md col"><div class="box"></div></div>
+  				<div class="col-lg col-md col"><div class="box"></div></div>
+  				<div class="col-lg col-md col-3"><div class="box"></div></div>
+  				<div class="col-lg col-md col-3"><div class="box"></div></div>
+  				<div class="col-lg col-md col-3"><div class="box"></div></div>
+  			</div>
+  		</div>
+  	</section>
+  	<section>
+  		<div class="container">
+ 			<div class="row row-cols-2">
+    			<div class="offset-2 col-4"><div class="box"></div></div>
+  				<div class="col-4"><div class="box"></div></div>
+    			<div class="col"><div class="box"></div></div>
+	    		<div class="col"><div class="box"></div></div>
+			</div>	
+		</div>
+  	</section>
+  	<section>
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-lg col-md-9 col-3"><div class="box"></div></div>
+  				<div class="col-lg-7 col-md col-4"><div class="box"></div></div>
+  				<div class="col-lg col-md col-5"><div class="box"></div></div>
+  			</div>
+  		</div>
+  	</section>
+  	<section>
+  		<div class="container">
+  			<div class="row bg-secondary justify-content-center align-items-center mh">
+  				<div class="col-lg-3 col-md col-12"><div class="box"></div></div>
+  				<div class="col-lg-3 col-md-3 col-6"><div class="box"></div></div>
+  				<div class="col-lg-3 col-md col-6"><div class="box"></div></div>
+  			</div>
+  		</div>
+  	</section>
+  	<section>
+  		<div class="container">
+  			<div class="row bg-warning justify-content-center mt-1 mh">
+  				<div class="col-lg-3 col-md col-12 align-self-start"><div class="box"></div></div>
+  				<div class="col-lg-3 col-md-3 col-6 align-self-center"><div class="box"></div></div>
+  				<div class="col-lg-3 col-md col-6 align-self-end"><div class="box"></div></div>
+  			</div>
+  		</div>
+  	</section>
+ 	<div class="container overflow-hidden">
+ 		<div class="row row-cols-2 g-3">
+    		<div class="col">
+    			<div class="box p-5 border">Custom column padding</div>
+    		</div>
+    		<div class="col">
+    			<div class="box p-5 border">Custom column padding</div>
+    		</div>
+    		<div class="offset-3 col">
+    			<div class="box p-5 border">Custom column padding</div>
+   			</div>
+  		</div>
+	</div>
+
+	<!-- component starts -->
+  		<h2 class="mt-5 display-3 text-capitalize text-center">components</h1>
+  	<!-- accordion -->
+  	<section class="mt-3">
+  		<div class="container">
+  			<div class="accordion accordion-flush">
+  			<div class="accordion-item">
+   				<h2 class="accordion-header">
+    				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+       				Accordion Item
+     				</button>
+    			</h2>
+    			<div id="flush-collapseOne" class="accordion-collapse collapse">
+      				<div class="accordion-body"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti debitis deserunt recusandae fuga iusto, modi nisi quia velit ea, aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati debitis accusamus amet esse officiis ipsum adipisci, nam quos iusto incidunt dignissimos rem inventore cum distinctio nobis quas eius illum cupiditate! Rerum aspernatur nulla mollitia quaerat repellat ullam quidem, repellendus, assumenda perspiciatis laboriosam hic porro ex ipsam doloribus illo tenetur?</div>
+    			</div>
+  			</div>
+			</div>
+			<!-- alert -->
+			<div class="alert alert-info alert-dismissible fade show" role="alert">
+  				Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Voluptatem vitae neque dolores similique, consequuntur, <a class="alert-link" href="#">learn more</a>
+  				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  			</div>
+  			<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  				unfortunately an error has been occured <a class="alert-link" href="#">learn more</a>
+  				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  			</div>
+  			<!-- badge -->
+  			<h2> you achieved a badge <span class="badge bg-success">new</span></h2>
+  			<button type="button" class="btn btn-primary">check <span class="badge bg-secondary">badge</span></button>
+
+  			<button type="button" class="btn btn-primary position-relative">
+  				inbox
+  				<span class="position-absolute badge top-0 start-100 translate-middle rounded-pill bg-danger">999+</span>
+  				<span class="visually-hidden">unread messages</span>
+  			</button>
+
+  			<button type="button" class="ms-4 btn btn-primary position-relative">
+  				videos
+  				<span class="position-absolute top-0 start-100 translate-middle rounded-pill bg-warning p-2 border border-light rounded-circle"></span>
+  			</button>
+        <button class="ms-3 btn btn-danger" type="button">danger</button>
+        <a href="#" class="btn btn-primary" role="button">Link</a>
+        <input type="submit" class="btn btn-warning" value="submit">
+        <button class="btn btn-outline-danger btn-sm">info</button>
+        <button class="btn btn-outline-danger">info</button>
+        <button class="btn btn-outline-danger btn-lg">info</button>
+       
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary">button</button>
+            <button class="btn btn-primary">button</button>
+            <button class="btn btn-primary">button</button>
+          </div>
+          <div class="d-grid gap-3 col-6 mx-auto">
+            <button class="btn btn-outline-danger">col6 mx auto</button>
+          </div>
+          <div class="d-grid d-md-flex justify-content-md-end">
+            <button class="col-4 btn btn-info">btn</button>
+          </div>
+          <div class="btn-toolbar" role="toolbar">
+            <div class="btn-group" role="group">
+              <button class="btn btn-outline-dark">1</button>
+              <button class="btn btn-outline-dark">2</button>
+              <button class="btn btn-outline-dark">3</button>
+              <button class="btn btn-outline-dark">4</button>
+              <button class="btn btn-outline-dark">next></button>
+            </div>
+          </div>
+          <div class="btn-group-vertical">
+            <button type="button" class="btn btn-info">btn</button>
+            <button type="button" class="btn btn-dark">btn</button>
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">dropdown</button>
+              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <li><a href="#" class="dropdown-item">btn</a></li>
+                <li><a href="#" class="dropdown-item">btn</a></li>
+              </ul>
+            </div>
+          </div>      
+  		</div>
+  	
+  	</section>
+
+  
+
+
+
+    <!-- js links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
